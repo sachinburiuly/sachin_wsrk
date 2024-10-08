@@ -1,0 +1,377 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{		
+				/*background-color:#e60af0;
+				background-image:url('image.png');
+				background-position:top right;
+				background-repeat:no-repeat;
+				background-attachment:fixed;*/
+				background:#0cff00 url('image.png')no-repeat top right fixed;
+				margin:0;	
+			}
+			#mainarea{
+					width:1200px;
+					height:1500px;
+					background:#f000ff;
+					margin:0 auto;
+				}
+					
+			#toparea{
+					width:1200px;
+					height:150px;
+					background:#ccc;
+				}
+			#logoarea{
+					width:150px;
+					height:150px;
+					background:red;
+					float:left;
+				}
+			#titlearea{
+					width:1050px;
+					height:150px;
+					background:purple;
+					float:left;
+				}
+			#titlearea h1{
+
+					color:red;
+					letter-spacing:50px;
+					word-spacing:100px;
+					line-height:50px;
+					text-transform:capitalize;
+					text-shadow: -5px 2px 0px rgba(44,235,0,0.6);
+				}
+			#titlearea p{
+
+					color:blue;
+					/*font-weight:900;
+					font-size:14px;
+					font-family:arial verdana 'geneva';*/
+					font:normal 14px arial verdana;
+					font-style:italic;
+					text-decoration:line-through;
+					text-align:center;
+					text-indent:20px;
+
+				}
+
+
+			#menuarea{
+					width:1200px;
+					height:40px;
+					background:blue;
+					position:sticky;
+					top:0;
+					z-index:1000;
+				}
+			#menuarea ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+				}
+
+			#menuarea ul li{
+						float:left;
+				}
+
+			#menuarea ul li a:link,#menuarea ul li a:visited{
+					color:rgb(255, 0, 0);
+					text-decoration:none;
+					background:yellow;
+					padding:10px 25px;
+					border-right:solid 1px black;
+					display:block;
+				}
+			#menuarea ul li a:hover{
+
+							color:yellow;
+							background:red;
+					}
+
+			#menuarea ul li ul{
+					display:none;
+				}
+
+			#menuarea ul li:hover ul{
+						display:block;
+						position:absolute;
+						z-index:1000;
+					}
+			#menuarea ul li:hover ul li{
+						float:none;
+															
+					}
+			#menuarea ul li:hover ul li a{
+					border-right:none;
+			}
+						
+			#slidearea{
+					width:1200px;
+					height:300px;
+					background:darkblue;
+					position:relative;
+					
+				}
+				#slidearea h1{
+						position:absolute;
+						bottom:0;
+						width:100%;
+						text-align:center;
+						padding:100px 0;
+						text-shadow:-5px 2px 0px rgba(44,235,0,0.6);
+
+						
+					}
+										
+
+
+			#darea{
+					width:1200px;
+					height:300px;
+					background:orange;
+
+				}
+			#d1{
+					width:500px;
+					height:200px;
+					background:#267a9c;
+					float:left;
+					margin:50px 50px 50px 50px;
+
+				}
+			#d2{
+					width:500px;
+					height:200px;
+					background:blue;
+					float:left;
+					margin:50px 50px 50px 50px;
+
+
+				}
+		
+			#boxarea{
+					width:1200px;
+					height:300px;
+					background:darkblue;
+
+				}
+			
+			.box1{
+					width:300px;
+					height:200px;
+					overflow:hidden;
+					float:left;
+					margin:50px 50px 50px 50px;
+					position:relative;
+					box-shadow: -49px -2px 147px 4px rgba(78,230,7,0.75);
+`					
+					
+				}
+				.box1 img{
+					width:100%;
+					height:100%;
+						
+				}
+
+				.details{					
+					position:absolute;
+					bottom:-300px;
+					color:white;
+					width:100%;
+					text-align:center;
+					padding:20px 0;
+					background:linear-gradient(to bottom,transparent,yellow);
+					transition:all 1s;
+				}
+				.box1:hover .details{
+							bottom:0;
+						}	
+	
+			
+			.bg1{
+				background:#8e1d05;
+				}
+			.bg2{
+				background:#ffff04;
+													
+				}
+			.bg3{
+				background:#4cff04;
+				}
+
+			#footarea{
+					width:1200px;
+					height:410px;
+					background:#3a1f3e;
+
+
+				}
+			#f1{
+					width:300px;
+					height:410px;
+					background:#054042;
+					float:left;
+												
+				}
+
+
+			
+			#f1 ul{
+				/*list-style-type:none;*/
+				/*list-style-image:url('http://mpsckp.com/images/arr.png');
+				list-style-position:inside;*/
+				list-style:none url('http://mpsckp.com/images/arr.png')inside;
+
+
+
+			}
+			#f2{
+					width:300px;
+					height:410px;
+					background:#3b1184;
+					float:left;
+					
+
+				}
+			#f2 ul{
+
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+		#f2 ul li a:link,#f2 ul li a:visited{
+					color:rgb(255, 0, 0);
+					text-decoration:none;
+					background:yellow;
+					padding:10px 25px;
+					border-bottom:solid 1px black;
+					display:block;
+				}
+			#f2 ul li a:hover{
+					color:yellow;
+					background:red;
+				}
+
+				#f3{
+					width:300px;
+					height:410px;
+					background:#4224d8;
+					float:left;
+					
+				}
+			#f4{
+					width:300px;
+					height:410px;
+					background:#118428;
+					float:left;				
+					
+				}
+			#rmenu{
+				position:fixed;
+				right:0;
+				top:100px;
+				background:yellow;
+				width:50px;
+				height:150px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+				</div>
+				<div id="titlearea">
+					<h1>hadding</h1>
+					<p>paragraph</p>
+				</div>
+			</div>
+			<div id="menuarea">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PRODUCTS</a>
+						<ul>
+							<li><a href="#">PRODUCT1</a></li>
+							<li><a href="#">PRODUCT2</a></li>
+							<li><a href="#">PRODUCT3</a></li>
+							<li><a href="#">PRODUCT4</a></li>
+						</ul>
+					</li>
+
+						
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+				</ul>
+
+			</div>
+			<div id="slidearea">
+				<video width="100%"height="100%"controls loop>
+					<source src="C:\Users\kunal\OneDrive\Desktop\csssachin\2876754-hd_1920_1080_25fps.mp4" type="video/mp4">
+				</video>
+				<h1>XYZ</h1>
+						
+			</div>
+			<div id="darea">
+				<div id="d1">
+				</div>
+				<div id="d2">
+				</div>
+
+			</div>
+			<div id="boxarea">
+				<div class="box1 bg1">
+					<img src="image.png"/>
+					<div class="details">
+						<p>sachin buriuly</p>
+					</div>
+				</div>
+				<div class="box1 bg2">
+					<img src="image.png"/>
+					<div class="details">
+						<p>sachin buriuly</p>
+					</div>
+
+					
+				</div>
+				<div class="box1 bg3">
+					<img src="image.png"/>
+					<div class="details">
+						<p>sachin buriuly</p>
+					</div>
+
+				</div>
+			</div>
+			<div id="footarea">
+				<div id="f1">
+					<ul>
+						<li>HOME</li>
+						<li>ABOUT</li>
+						<li>GALLERY</li>
+						<li>CONTACT</li>
+					</ul>
+				</div>
+				<div id="f2">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+
+				</div>
+				<div id="f3">
+				</div>
+				<div id="f4">
+				</div>
+			</div>
+		</div>	
+		<div id="rmenu">
+
+		</div>		
+	</body>
+</html>
